@@ -5,7 +5,36 @@
   
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script language="JavaScript">
+    //Actualizar una vez al cargar página
+   
+    window.onunload = sale
+    var valor;
+    if(document.cookie){
+        galleta = unescape(document.cookie)
+        galleta = galleta.split(';')
+        for(m=0; m<galleta.length; m++){
+            if(galleta[m].split('=')[0] == "recarga"){
+            valor = galleta[m].split('=')[1]
+            break;
+            }
+        }
+    if(valor == "sip"){
+        document.cookie = "recarga=nop";
+        window.onunload = function(){}
+        document.location.reload()
+        }
+    else{
+    window.onunload=sale
+        }
+    }
+    
+    function sale(){
+    document.cookie ="recarga=sip"
+    }
 
+    console.log(sale);
+    </script>
   <title>Kronox Chile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -642,13 +671,13 @@
               </div>
               <div>
                 <i class="fa fa-phone"></i>
-                <a href="tel:+56994994188">+56 9 94994188</a>                   
-              </div><br>
+                <p><a href="tel:+56994994188">+56 9 94994188</a></p>                 
+              </div>
               <div>
                 <i class="fa fa-phone"></i>               
-                <a href="tel:+56942573039">+56 9 42573039</a>               
+                  <p><a href="tel:+56942573039">+56 9 42573039</a></p>         
               </div>
-              <br><br>
+              <br>
             </div>
             <div class="social-links">
               <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
