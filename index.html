@@ -5,36 +5,6 @@
   
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <script language="JavaScript">
-    //Actualizar una vez al cargar página
-   
-    window.onunload = sale
-    var valor;
-    if(document.cookie){
-        galleta = unescape(document.cookie)
-        galleta = galleta.split(';')
-        for(m=0; m<galleta.length; m++){
-            if(galleta[m].split('=')[0] == "recarga"){
-            valor = galleta[m].split('=')[1]
-            break;
-            }
-        }
-    if(valor == "sip"){
-        document.cookie = "recarga=nop";
-        window.onunload = function(){}
-        document.location.reload()
-        }
-    else{
-    window.onunload=sale
-        }
-    }
-    
-    function sale(){
-    document.cookie ="recarga=sip"
-    }
-
-    console.log(sale);
-    </script>
   <title>Kronox Chile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -173,7 +143,7 @@
       </div>
     </section>
     
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="">
 
 
       <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
@@ -370,14 +340,14 @@
 
 
 
-      <div class="container" data-aos="fade-up">
+      <div align="center" class="container" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title">Línea de Productos</h3>
           <p class="section-description"></p>
         </div>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/photo 33.JPG" class="img-fluid" width="800" height="600">
+        <div class="row container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
+            <img src="assets/img/photo33.JPG" class="img-fluid" width="800" height="600">
             <div class="portfolio-info">
               <h4>Piping</h4>
               <a href="" class="details-link" data-toggle="modal" data-target="#modal1" title="More Details"><i
@@ -385,8 +355,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/Flanges inox(11).png" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="assets/img/flanges.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Fititings</h4>
               <a href="" class="details-link" data-toggle="modal" data-target="#modal2" title="More Details"><i
@@ -394,8 +364,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/Valvulas.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="assets/img/valvulas.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Válvulas</h4>
                 <a href="" class="details-link" data-toggle="modal" data-target="#modal3" title="More Details"><i
@@ -403,8 +373,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/plancha-struc-hq (1).jpg" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="assets/img/plancha-struc-hq(1).jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Planchas / Barras</h4>
                 <a href="" class="details-link" data-toggle="modal" data-target="#modal4" title="More Details"><i
@@ -412,8 +382,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/Gruvlok.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
+            <img src="assets/img/gruvlock.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Accesorios</h4>
                 <a href="" class="details-link" data-toggle="modal" data-target="#modal5" title="More Details"><i
@@ -582,14 +552,14 @@
     </section><!-- End Team Section -->
 
     <!-- INICIO Representaciones  -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title">Representaciones </h3>
           <p class="section-description"></p>
         </div>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <img src="assets/img/rep/Tech-removebg-preview.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Tech/pro </h4>
@@ -597,7 +567,7 @@
               <p>Espacialista Mundial en válvulas para slurry y procesos industriales severos en diversas industrias</p>             
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
             <img src="assets/img/redvalve.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Red Valve</h4>
@@ -606,7 +576,7 @@
                 diseñados</p>             
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <img src="assets/img/rep/gruvlok.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>GruvLok</h4>
@@ -614,7 +584,7 @@
               <p> Líder mundial en Acoples Rapidos ( Tipo Vic) , fittigs, Válvulas y mas </p>            
             </div>
           </div>       
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <img src="assets/img/rep/duktus.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Duktus</h4>
@@ -622,7 +592,7 @@
               <p>Fábrica Alemana de tuberías de hierro ductil, para el transporte de fluidos de alta abrasión y presiones, con tecnología de montaje seguro, rápido y confiable.</p>             
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <img src="assets/img/rep/tefen.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Tefen</h4>
@@ -631,7 +601,7 @@
                 dirigidas a una amplia diversidad de sectores y propósitos</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
             <img src="assets/img/rep/tempel.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Tempel</h4>
@@ -748,13 +718,13 @@
                         <img class="d-block w-100" src="assets/img/sicepmini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/senegociamini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/SAP-ariba-lgmini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/sapmini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/Quadrem_Logomini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/quadremlogomini.png" alt="First slide">
                     </div>
                   </div>
       
@@ -768,10 +738,10 @@
                         <img class="d-block w-100" src="assets/img/sicepmini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/senegociamini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/SAP-ariba-lgmini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/sapmini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
                         <img class="d-block w-100" src="assets/img/Etico PNGmini.png" alt="First slide">
@@ -785,7 +755,7 @@
       
                   <div class="row">
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/Quadrem_Logomini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/quadremlogomini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
                         <img class="d-block w-100" src="assets/img/Etico PNGmini.png" alt="First slide">
@@ -794,7 +764,7 @@
                         <img class="d-block w-100" src="assets/img/sicepmini.png" alt="First slide">
                     </div>
                     <div class="col-md-3">
-                        <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="First slide">
+                        <img class="d-block w-100" src="assets/img/senegociamini.png" alt="First slide">
                     </div>
                   </div>
       
@@ -851,14 +821,14 @@
       
                 <div class="carousel-item carousel-item-next carousel-item-left">
               
-                  <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="Second slide">
+                  <img class="d-block w-100" src="assets/img/senegociamini.png" alt="Second slide">
       
                 </div>
                 <!-- Carousel Item 2 -->
       
                 <div class="carousel-item">
               
-                  <img class="d-block w-100" src="assets/img/SAP-ariba-lgmini.png" alt="Third slide">
+                  <img class="d-block w-100" src="assets/img/sapmini.png" alt="Third slide">
                   
                 </div>
                 <!-- Carousel Item 3 -->
@@ -872,7 +842,7 @@
       
                 <div class="carousel-item">
       
-                  <img class="d-block w-100" src="assets/img/Quadrem_Logomini.png" alt="Ninth slide">
+                  <img class="d-block w-100" src="assets/img/quadremlogomini.png" alt="Ninth slide">
       
                 </div>
                 <!-- Carousel Item 5 -->
@@ -886,14 +856,14 @@
       
                 <div class="carousel-item">
       
-                  <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="Seventh slide">
+                  <img class="d-block w-100" src="assets/img/senegociamini.png" alt="Seventh slide">
       
                 </div>
                 <!-- Carousel Item 7 -->
       
                 <div class="carousel-item">
               
-                  <img class="d-block w-100" src="assets/img/SAP-ariba-lgmini.png" alt="Eighth slide">
+                  <img class="d-block w-100" src="assets/img/sapmini.png" alt="Eighth slide">
       
                 </div>
                 <!-- Carousel Item 8 -->
@@ -907,7 +877,7 @@
       
                 <div class="carousel-item">
       
-                  <img class="d-block w-100" src="assets/img/Quadrem_Logomini.png" alt="Ninth slide">
+                  <img class="d-block w-100" src="assets/img/quadremlogomini.png" alt="Ninth slide">
       
                 </div>
                 <!-- Carousel Item 10 -->
@@ -921,7 +891,7 @@
       
                 <div class="carousel-item">
       
-                  <img class="d-block w-100" src="assets/img/Se Negociamini.png" alt="Twelveth slide">
+                  <img class="d-block w-100" src="assets/img/senegociamini.png" alt="Twelveth slide">
       
                 </div>
                 <!-- Carousel Item 12 -->
@@ -970,7 +940,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
       
         <!-- Additional Javascript -->
-        <script src="js/main.js"></script>
+        
       
       
       
